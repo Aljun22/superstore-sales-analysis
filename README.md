@@ -22,8 +22,8 @@ Below are sample screenshots from the interactive dashboard:
 
 1. Main Dashboard Overview  
 <p align="center">
-  <img src="images/mainpage.png" alt="Main Page" width="45%">
-  <img src="images/customer_segment.png" alt="Customer Segment" width="45%">
+  <img src="Images/mainpage.png" alt="Main Page" width="45%">
+  <img src="Images/customer_segment.png" alt="Customer Segment" width="45%">
 </p>
 
 2. DAX Measures Table**  
