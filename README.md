@@ -26,12 +26,12 @@ Below are sample screenshots from the interactive dashboard:
   <img src="Images/customer_segment.png" alt="Customer Segment" width="45%">
 </p>
 
-2. DAX Measures Table**  
+2. DAX Measures Table 
 
----
+
 
 🧮 Key DAX Measures
-```DAX
+DAX
 Total Sales = SUM ( Orders_Clean[Sales] )
 
 Total Profit = SUM ( Orders_Clean[Profit] )
