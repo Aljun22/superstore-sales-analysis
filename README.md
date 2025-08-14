@@ -27,14 +27,14 @@ Below are sample screenshots from the interactive dashboard:
 </p>
 
 2. 🧮 DAX Measures Used
-
-- Averages & Counts
+```DAX
+📊 Averages & Counts
 Avg Discount = AVERAGE(orders_clean[Discount])
 Avg Profit per Customer = DIVIDE([Total Profit], DISTINCTCOUNT(orders_clean[Customer ID]))
 Avg Sales per Customer = DIVIDE([Total Sales], DISTINCTCOUNT(orders_clean[Customer ID]))
 Customer Count = DISTINCTCOUNT(orders_clean[Customer Name])
 
-- Rankings
+🏆 Rankings
 Customer Profit Rank =
 RANKX(
     ALL(orders_clean[Customer Name]),
@@ -44,7 +44,7 @@ RANKX(
     DENSE
 )
 
-- Profit Calculations
+💰 Profit Calculations
 Profit by Category = SUM(orders_clean[Profit])
 Profit by Customer = SUM(orders_clean[Profit])
 Profit by Region = SUM(orders_clean[Profit])
@@ -55,7 +55,7 @@ Profit Margin = DIVIDE([Total Profit], [Total Sales])
 Profit MTD = TOTALMTD([Total Profit], orders_clean[Order Date])
 Profit YTD = TOTALYTD([Total Profit], orders_clean[Order Date])
 
-- Sales Calculations
+🛒 Sales Calculations
 Sales by Category = SUM(orders_clean[Sales])
 Sales by Region = SUM(orders_clean[Sales])
 Sales Growth % = DIVIDE([Total Sales] - [Sales LY], [Sales LY])
@@ -63,12 +63,12 @@ Sales LY = CALCULATE([Total Sales], SAMEPERIODLASTYEAR(orders_clean[Order Date])
 Sales MTD = TOTALMTD([Total Sales], orders_clean[Order Date])
 Sales YTD = TOTALYTD([Total Sales], orders_clean[Order Date])
 
-- Totals
+📦 Totals
 Total Profit = SUM(orders_clean[Profit])
 Total Qty = SUM(orders_clean[Quantity])
 Total Sales = SUM(Orders_Clean[Sales])
 
-- Year-over-Year Growth
+📈 Year-over-Year Growth
 YoY Sales Growth % =
 VAR CurrentSales = SUM(orders_clean[Sales])
 VAR LastYearSales =
@@ -82,6 +82,7 @@ RETURN
         BLANK(),
         DIVIDE(CurrentSales - LastYearSales, LastYearSales)
     )
+
 
 
 🧮 Key DAX Measures
