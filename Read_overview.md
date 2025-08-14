@@ -13,6 +13,7 @@ The analysis focuses on:
 🛠 Tools Used
 - **Power BI** – For building interactive dashboards and visual analytics
 - **Microsoft Excel** – For initial data cleaning and preparation
+- **Git & Github** – For version control 
 - **DAX (Data Analysis Expressions)** – For creating calculated measures and KPIs
 
 ---
